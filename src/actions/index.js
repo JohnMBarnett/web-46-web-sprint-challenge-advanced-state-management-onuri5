@@ -35,7 +35,7 @@ export const addSmurf = (name, position, nickname, description) => {
 
 export const setError = (message) => {
     return (dispatch) => {
-        dispatch(errorMessage(message));
+        dispatch(errorMessage1(message));
     }
 }
 
@@ -55,6 +55,6 @@ export const add = (name, position, nickname, description) => {
     return({type: ADD, payload: {name: name, position: position, nickname: nickname, description: description}})
 }
 
-export const errorMessage = (message) => {
+export const errorMessage1 = (message) => {
     return({type: ERROR, payload: message});
 }

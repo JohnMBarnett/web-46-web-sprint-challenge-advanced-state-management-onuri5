@@ -32,7 +32,7 @@ const reducer = (state = initialState, action)=>{
         case 'ERROR_MESSAGE': 
             return {
                 ...state,
-                errors: [...state.errors, action.payload]
+                errors: action.payload
             }
         default: {
             return {
